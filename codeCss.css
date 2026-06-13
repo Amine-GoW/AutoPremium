@@ -12,7 +12,7 @@
 .lista a{
     color: #b2b239;
 }
-.lista :hover{
+.lista:hover{
     color: rgb(120, 5, 215);
 }
 .bienvenida{
@@ -34,8 +34,12 @@
     border-radius: 4px;
     padding: 10px;
     text-decoration: none;
+    font-family: Verdana;
     background-color: #28abd6;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: none;
+}
+.btn:hover{
+    background-color: #07469e;
 }
 .coches{
     display: grid;
@@ -50,4 +54,6 @@
     padding: 20px;
     text-align: center;
 }
-
+img{
+    width: 100%;
+}
