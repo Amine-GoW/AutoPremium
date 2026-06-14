@@ -1,8 +1,12 @@
-
 *{
     padding: 0;
     margin: 0;
     box-shadow: border-box;
+    scroll-behavior: smooth !important;
+}
+body{
+    background-color: #121212; /* Un negro mate muy elegante que se usa en temas oscuros */
+    font-family: sans-serif;
 }
 header{
     background-image: url(imagenes/bmw\ m4.jpeg);
@@ -53,24 +57,30 @@ header{
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
     font-size: 30px;
 }
-#ver-coches{
-    background-color: #a3ff00;
-    font-weight:bold;
-    font-size: 14px;
-}
 .btn{
     cursor: pointer;
-    border-radius: 4px;
-    padding: 10px;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    border-radius: 50px;
+    padding: 12px 28px;
     text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     font-family: Verdana;
-    background-color: #28abd6;
+    background-color: #00f0ff;
+    color: #000000;
     border: none;
 }
 .btn:hover{
-    background-color: #07469e;
+    background-color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 240, 255, 0.4);
 }
 .titulo{
+    color: #ffffff;
+    margin: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -85,14 +95,67 @@ header{
     gap: 20px;
 }
 .tarjetacoche{
-    background-color: rgb(255, 255, 255);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #2d2d2d;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     max-width: 500px;
-    max-height: 600px;
+    max-height: 500px;
     padding: 20px;
     text-align: center;
 }
-img{
+.tarjetacoche h3{
+    font-size: 1.4rem;
+    margin-top: 15px;
+    color: #ffffff;
+}
+.tarjetacoche img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.precio{
+    color: #00f0ff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.contacto{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 20px;
+    gap: 20px;
+    max-width: 500px;
+    width: 100%;
+    margin: 40px auto;
+    background-color: #333333;
+    color: #ffffff;
+}
+.contenedor{
+    
+    font-size: 20px;
+    font-weight: bold;
+    width:500px;
+    height: 50x;
+}
+.contenedor input{
+    font-size: 15px;
+    border: 1px solid #767676;
+    border-radius: 5px;
+    width: 70%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.contenedor textarea{
+    margin-top: 10px;
+    font-size: 15px;
+    height: 200px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 90%;
 }
