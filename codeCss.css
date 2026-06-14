@@ -137,7 +137,6 @@ header{
     color: #ffffff;
 }
 .contenedor{
-    
     font-size: 20px;
     font-weight: bold;
     width:500px;
@@ -158,4 +157,22 @@ header{
     border-radius: 5px;
     padding: 5px;
     width: 90%;
+}
+.sobreNosotros p{
+    width: 800px;
+    margin: 20px auto;
+}
+.sobreNosotros a{
+    color: #00f0ff;
+    display: flex;
+    justify-content: flex-start;
+}
+.sobreNosotros a:hover{
+    color: rgb(120, 5, 215);;
+}
+.parafo{
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
 }
