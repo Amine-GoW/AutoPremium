@@ -1,7 +1,24 @@
 
+*{
+    padding: 0;
+    margin: 0;
+    box-shadow: border-box;
+}
+header{
+    background-image: url(imagenes/bmw\ m4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:scroll;
+}
 .menu{
+    padding: 20px;
+    opacity: 0.7;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    position: fixed;
+    background-color: rgb(23, 22, 22);
 }
 .navegador{
     display: inline-flex;
@@ -9,14 +26,17 @@
     gap: 20px;
     list-style: none;
 }
-.lista a{
-    color: #b2b239;
+.lista{
+    font-size: 20px;
+    font-weight: bold;
 }
-.lista:hover{
+.lista a{
+    color: #ffffff;
+}
+.lista :hover{
     color: rgb(120, 5, 215);
 }
 .bienvenida{
-    background-color: #979715;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,10 +44,19 @@
     height: 100vh;
 }
 .bienvenida h1{
+    color: #ffffff;
     font-size: 60px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 .bienvenida p{
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
     font-size: 30px;
+}
+#ver-coches{
+    background-color: #a3ff00;
+    font-weight:bold;
+    font-size: 14px;
 }
 .btn{
     cursor: pointer;
@@ -41,9 +70,18 @@
 .btn:hover{
     background-color: #07469e;
 }
+.titulo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    size: 20px;
+    padding: 20px;
+}
 .coches{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
     gap: 20px;
 }
 .tarjetacoche{
@@ -51,6 +89,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     max-width: 500px;
+    max-height: 600px;
     padding: 20px;
     text-align: center;
 }
