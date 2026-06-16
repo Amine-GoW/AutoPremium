@@ -22,6 +22,7 @@ header{
     display: flex;
     justify-content: center;
     position: fixed;
+    z-index: 9999;
     background-color: rgb(23, 22, 22);
 }
 .navegador{
@@ -87,12 +88,25 @@ header{
     size: 20px;
     padding: 20px;
 }
+#vistos{
+    color: #ffffff;
+    margin: 20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    size: 20px;
+    padding: 20px;
+}
 .coches{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .tarjetacoche{
     width: 100%;
@@ -126,10 +140,10 @@ header{
     align-items: center;
     flex-direction: column;
     border-radius: 5px;
-    padding: 20px;
+    padding: 275px 50px;
     gap: 20px;
     max-width: 500px;
-    width: 100%;
+    max-height: 500px;
     margin: 40px auto;
     background-color: #333333;
     color: #ffffff;
@@ -137,8 +151,10 @@ header{
 .contenedor{
     font-size: 20px;
     font-weight: bold;
-    width:500px;
-    height: 50x;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height: 100%;
 }
 .contenedor input{
     font-size: 15px;
@@ -154,7 +170,7 @@ header{
     height: 200px;
     border-radius: 5px;
     padding: 5px;
-    width: 90%;
+    width: 70%;
 }
 .sobreNosotros{
     background-color: #333333;
@@ -188,8 +204,10 @@ header{
 .contenedorGira{
     position: relative;
     perspective: 1000px;
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    max-width: 450px;
+    height: 480px;
+    margin: 0 auto;
 }
 .contenidoInterior {
     width: 100%;
@@ -222,4 +240,49 @@ header{
 }
 .contenedorGira.giro .contenidoInterior {
     transform: rotateY(180deg);
+}
+@media (max-width: 768px) {
+    /* 1. Achicamos las letras gigantes del Banner principal */
+    .bienvenida {
+        height: 60vh; /* Bajamos de 100vh a 60vh para que la caja sea más chata en móviles */
+        min-height: 350px; /* Le ponemos un suelo mínimo para que los textos no se aplasten */
+    }
+
+    header {
+        background-position: center center; /* Asegura que el coche se quede bien centrado en el visor */
+    }
+    .bienvenida h1 {
+        font-size: 35px;
+        text-align: center;
+        padding: 0 15px;
+    }
+    .bienvenida p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* 2. Hacemos el menú de navegación flexible */
+    .menu {
+        position: static; /* En móviles es mejor que no tape la pantalla al hacer scroll */
+        padding: 15px;
+    }
+    .navegador {
+        gap: 10px;
+    }
+    .lista {
+        font-size: 16px; /* Letra un poco más pequeña para que no se desborde */
+    }
+
+    /* 3. Liberamos el ancho fijo del Formulario y del Sobre Nosotros */
+    .contacto,
+    .contenedor,
+    .sobreNosotros {
+        width: 90% !important; /* Deja de medir 500px fijos y se adapta al ancho del móvil */
+        max-width: 100%;
+    }
+
+    .contenedor input, 
+    .contenedor textarea {
+        width: 100%; /* Los inputs ocupan todo el ancho del bloque de formulario */
+    }
 }

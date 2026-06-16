@@ -33,6 +33,7 @@
     </header>
     <main>
         <h2 class="titulo" id="coches">Catalogo de los mejores coches:</h2>
+        <span id="vistos">Coches vistos: 0</span>
         <section class="coches" >
             <div class="contenedorGira" >
                 <div class="contenidoInterior">
@@ -45,8 +46,12 @@
                         </article>
                     </div>
                     <div class="caraTrasera">
-                        <p>OKey Funciona</p>
-                        
+                        <ul>
+                            <li><strong>Motor: </strong> V8 a 90º atmosférico (código S62), 4.941 cc.</li>
+                            <li><strong>Potencia: </strong>400 CV a 6.600 rpm.</li>
+                            <li><strong>Aceleración (0-100 km/h): </strong>5.3 segundos</li>
+                            <li><strong>Velocidad Maxima</strong> 250 km/h (limitada electrónicamente). (Alcanzaba hasta casi 300 km/h sin limitador).</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -62,11 +67,15 @@
                         </article>
                     </div>
                     <div class="caraTrasera">
-                        <p>Okey Funciona</p>
+                        <ul>
+                            <li><strong>Motor: </strong>V8 biturbo de 4.0 litros (3.982 cc).</li>
+                            <li><strong>Potencia: </strong>630 CV a 6.000 rpm.</li>
+                            <li><strong>Aceleración (0-100 km/h): </strong>Unos estratosféricos 3,4 segundos.</li>
+                            <li><strong>Velocidad Maxima</strong>  Limitada electrónicamente a 250 km/h (pero ampliable hasta 280 km/h o 305 km/h con paquetes dinámicos adicionales).</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <!--gjhdthyjtfkjukyukykykykykyk-->
             <div class="contenedorGira">
                 <div class="contenidoInterior">
                     <div class="caraFrontal">
@@ -78,7 +87,12 @@
                         </article>
                     </div>
                     <div class="caraTrasera">
-                        <p>Okey Funciona</p>
+                        <ul>
+                            <li><strong>Motor: </strong>V8 biturbo de 4.0 litros (3.996 cc) con tecnología microhíbrida (Mild Hybrid) de 48V.</li>
+                            <li><strong>Potencia: </strong>630 CV a 6.000 rpm.</li>
+                            <li><strong>Aceleración (0-100 km/h): </strong>Unos estratosféricos 3,4 segundos.</li>
+                            <li><strong>Velocidad Maxima</strong> Limitada electrónicamente a 250 km/h (pero ampliable hasta 280 km/h o 305 km/h con paquetes dinámicos adicionales).</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -93,7 +107,12 @@
                         </article>
                     </div>
                     <div class="caraTrasera">
-                        <p>Okey Funciona</p>
+                        <ul>
+                            <li><strong>Motor: </strong>1.3 litros (1.308 cc) de dos rotores</li>
+                            <li><strong>Potencia: </strong>Entre 146 CV y 200 CV (dependiendo del año y la Versión).</li>
+                            <li><strong>Aceleración (0-100 km/h): </strong>entre 6.7 a 9.2 (dependiendo del año y la Versión).</li>
+                            <li><strong>Velocidad Maxima</strong> 240 km/h . (Alcanzaba hasta casi 300 km/h sin limitador).</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -101,7 +120,7 @@
         <h2 class="titulo">
             Contacta con nosotros:
         </h2>
-        <form class="contacto">
+        <form class="contacto" id="contacto">
             <div class="contenedor">
                 <label for="nombre" label="nombre-label">Nombre:</label>
                 <input type="text" name="nombre-input" placeholder="nombre" required>
@@ -121,8 +140,8 @@
             <div class="contenedor">
                 <p>Comentario:</p>
                 <textarea name="comentario" placeholder="Tu comentario aqui"></textarea>
-                <button type="submit" class="btn">Enviar</button>
             </div>
+            <button type="submit" class="btn" id="enviar">Enviar</button>
         </form>
     </main>
     <footer id="SobreNosotros">
