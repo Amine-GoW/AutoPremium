@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="codeCss.css">
+        <script src="codeJs.js" defer></script>
         <title>Concesionario de coches</title>
     </head>
 </html>
@@ -27,41 +28,80 @@
             <section class="bienvenida" id="inicio">
                 <h1>Bienvenido a AutoPremium</h1>
                 <p>Los mejores coches al mejor precio</p>
-                <button class="btn" id="ver-coches">Ver Coches</button>
+                <button class="btn" id="verCoches">Ver Coches</button>
             </section>
     </header>
     <main>
         <h2 class="titulo" id="coches">Catalogo de los mejores coches:</h2>
         <section class="coches" >
-            <article class="tarjetacoche">
-                <img src="imagenes/bmw e39.jpg" alt="bmw e39">
-                <h3>BMW SERIE 5</h3>
-                <p class="precio"><strong>15.000€</strong></p>
-                <button class="btn">Más Información</button>
-            </article>
-            <article class="tarjetacoche">
-                <img src="imagenes/amg.jpeg" alt="amg">
-                <h3>MERCEDES AMG</h3>
-                <p class="precio"><strong>99.999€</strong></p>
-                <button class="btn">Más Información</button>
-            </article>
-            <article class="tarjetacoche">
-                <img src="imagenes/rs7.jpeg" alt="rs7">
-                <h3>AUDI RS7</h3>
-                <p class="precio"><strong>78.000€</strong></p>
-                <button class="btn">Más Información</button>
-            </article>
-            <article class="tarjetacoche">
-                <img src="imagenes/mazda-rx7.jpg" alt="mazda-rx7">
-                <h3>MAZDA RX7</h3>
-                <p class="precio"><strong>35.000€</strong></p>
-                <button class="btn">Más Información</button>
-            </article>
+            <div class="contenedorGira" >
+                <div class="contenidoInterior">
+                    <div class="caraFrontal">
+                        <article class="tarjetacoche">
+                            <img src="imagenes/bmw e39.jpg" alt="bmw e39">
+                            <h3>BMW SERIE 5</h3>
+                            <p class="precio"><strong>15.000€</strong></p>
+                            <button class="btn masInfo">Más Información</button>
+                        </article>
+                    </div>
+                    <div class="caraTrasera">
+                        <p>OKey Funciona</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contenedorGira">
+                <div class="contenidoInterior">
+                    <div class="caraFrontal">
+                        <article class="tarjetacoche">
+                            <img src="imagenes/amg.jpeg" alt="amg">
+                            <h3>MERCEDES AMG</h3>
+                            <p class="precio"><strong>99.999€</strong></p>
+                            <button class="btn masInfo">Más Información</button>
+                        </article>
+                    </div>
+                    <div class="caraTrasera">
+                        <p>Okey Funciona</p>
+                    </div>
+                </div>
+            </div>
+            <!--gjhdthyjtfkjukyukykykykykyk-->
+            <div class="contenedorGira">
+                <div class="contenidoInterior">
+                    <div class="caraFrontal">
+                        <article class="tarjetacoche">
+                            <img src="imagenes/rs7.jpeg" alt="rs7">
+                            <h3>AUDI RS7</h3>
+                            <p class="precio"><strong>78.000€</strong></p>
+                            <button class="btn masInfo">Más Información</button>
+                        </article>
+                    </div>
+                    <div class="caraTrasera">
+                        <p>Okey Funciona</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedorGira">
+                <div class="contenidoInterior">
+                    <div class="caraFrontal">
+                        <article class="tarjetacoche">
+                            <img src="imagenes/mazda-rx7.jpg" alt="mazda-rx7">
+                            <h3>MAZDA RX7</h3>
+                            <p class="precio"><strong>35.000€</strong></p>
+                            <button class="btn masInfo">Más Información</button>
+                        </article>
+                    </div>
+                    <div class="caraTrasera">
+                        <p>Okey Funciona</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <h2 class="titulo">
             Contacta con nosotros:
         </h2>
-        <form class="contacto" id="contacto">
+        <form class="contacto">
             <div class="contenedor">
                 <label for="nombre" label="nombre-label">Nombre:</label>
                 <input type="text" name="nombre-input" placeholder="nombre" required>
@@ -85,15 +125,17 @@
             </div>
         </form>
     </main>
-    <footer class="sobreNosotros" id="SobreNosotros">
+    <footer id="SobreNosotros">
         <h2 class="titulo">Sobre Nosotros:</h2>
-        <p class="parafo">Pagina web hecha por Amine Bouayadi como una practica con (Html,Css,JavaScript). 
-            Soy un graduado de grado Superior de DAW, tengo experiencia trabajando en front end y back end y con base de datos.<br>
-            Para Contactar conmigo:<br>
-            Telefono:<a href="#612473471">612 47 34 71</a><br>
-            Gmail:<a href="#bouayadi49@gmail.com">Bouayadi49@gmail.com</a><br>
-            GitHUB:<a href="#Amine-GoW">Amine-GoW</a>
-        </p>
+        <div class="sobreNosotros">
+            <p class="parafo">Pagina web hecha por Amine Bouayadi como una practica con (Html,Css,JavaScript). 
+                Soy un graduado de grado Superior de DAW, tengo experiencia trabajando en front end y back end y con base de datos.<br><br>
+                &nbsp;&nbsp;Para Contactar conmigo:<br><br>
+                &nbsp;&bull; Telefono:<a href="#612473471">612 47 34 71</a><br>
+                &nbsp;&bull; Gmail:<a href="#bouayadi49@gmail.com">Bouayadi49@gmail.com</a><br>
+                &nbsp;&bull; GitHUB:<a href="#Amine-GoW">Amine-GoW</a>
+            </p>
+        </div>
     </footer>
         
     
