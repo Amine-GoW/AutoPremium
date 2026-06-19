@@ -24,6 +24,7 @@
                     <a href="#SobreNosotros">Sobre Nosotros</a>
                 </li>
             </ul>
+            <div id="buscar"><input type="text" name="buscar" placeholder="Buscar por marca" id="buscarInp"/></div>
         </nav>
             <section class="bienvenida" id="inicio">
                 <h1>Bienvenido a AutoPremium</h1>
@@ -33,9 +34,12 @@
     </header>
     <main>
         <h2 class="titulo" id="coches">Catalogo de los mejores coches:</h2>
+        <h2 id="sinResultados" style="color: white; text-align: center; display: none; margin: 40px auto; font-family: sans-serif;">
+            Todavía no tenemos este modelo.
+        </h2>
         <span id="vistos">Coches vistos: 0</span>
-        <section class="coches" >
-            <div class="contenedorGira" >
+        <section class="coches">
+            <div class="contenedorGira" modelo="bmw">
                 <div class="contenidoInterior">
                     <div class="caraFrontal">
                         <article class="tarjetacoche">
@@ -56,7 +60,7 @@
                 </div>
             </div>
             
-            <div class="contenedorGira">
+            <div class="contenedorGira" modelo="mercedes">
                 <div class="contenidoInterior">
                     <div class="caraFrontal">
                         <article class="tarjetacoche">
@@ -76,7 +80,7 @@
                     </div>
                 </div>
             </div>
-            <div class="contenedorGira">
+            <div class="contenedorGira" modelo="audi">
                 <div class="contenidoInterior">
                     <div class="caraFrontal">
                         <article class="tarjetacoche">
@@ -96,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            <div class="contenedorGira">
+            <div class="contenedorGira" modelo="mazda">
                 <div class="contenidoInterior">
                     <div class="caraFrontal">
                         <article class="tarjetacoche">

@@ -20,10 +20,23 @@ header{
     opacity: 0.7;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     position: fixed;
     z-index: 9999;
     background-color: rgb(23, 22, 22);
+}
+#buscar input{
+    padding: 6px 12px;
+    border-radius: 20px;
+    width: 300px;
+    border: 1px solid #2d2d2d;
+    background-color: #404040;
+    color: #ffffff;
+    outline: none;
+    font-size: 14px;
+}
+#buscar input:focus{
+    border-color: #00f0ff;
 }
 .navegador{
     display: inline-flex;
@@ -264,6 +277,9 @@ header{
     /* 2. Hacemos el menú de navegación flexible */
     .menu {
         position: static; /* En móviles es mejor que no tape la pantalla al hacer scroll */
+        padding: 15px;
+        flex-direction: column; /* Apila el buscador arriba y los enlaces abajo */
+        gap: 15px;
         padding: 15px;
     }
     .navegador {

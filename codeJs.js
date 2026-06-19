@@ -32,3 +32,38 @@ const btnEnviar=document.getElementById("enviar");
 btnEnviar.addEventListener("click",function(){
     alert("Tus informacion han sido enviada, Gracias");
 })
+
+
+const input=document.getElementById("buscarInp");
+const tarjetasCoche=document.querySelectorAll(".contenedorGira");
+input.addEventListener("keypress",function(event){
+    if(event.key==="Enter"){
+        Buscar();
+    }
+});
+function Buscar(){
+    let cont=0;
+    const palabra=input.value.toLowerCase().trim();
+    todasTarjetas.forEach(function(tarjeta){
+        const modeloCoche=tarjeta.getAttribute("modelo").toLocaleLowerCase();
+        if(palabra===""){
+            tarjeta.style.display="block";
+            cont++;
+            Mover();
+        }
+        else if(modeloCoche.includes(palabra)){
+            tarjeta.style.display="block";
+            cont++;
+            Mover();
+        }
+        else{
+            tarjeta.style.display="none";
+            Mover();
+        }
+        if(cont==0){
+            document.getElementById("sinResultados").style.display="block";
+        }
+        else
+            document.getElementById("sinResultados").style.display="none";
+    });
+}
