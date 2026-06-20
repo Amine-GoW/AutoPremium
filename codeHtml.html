@@ -12,7 +12,7 @@
         <nav class="menu" >
             <ul class="navegador" >
                 <li class="lista">
-                    <a href="#inicio">Inicio</a>
+                    <a href="#principal" id="inicio">Inicio</a>
                 </li>
                 <li class="lista">
                     <a href="#coches">Coches</a>
@@ -26,7 +26,7 @@
             </ul>
             <div id="buscar"><input type="text" name="buscar" placeholder="Buscar por marca" id="buscarInp"/></div>
         </nav>
-            <section class="bienvenida" id="inicio">
+            <section class="bienvenida" id="principal">
                 <h1>Bienvenido a AutoPremium</h1>
                 <p>Los mejores coches al mejor precio</p>
                 <button class="btn" id="verCoches">Ver Coches</button>
@@ -120,6 +120,86 @@
                     </div>
                 </div>
             </div>
+            <div class="contenedorGira" modelo="mazda">
+                <div class="contenidoInterior">
+                    <div class="caraFrontal">
+                        <article class="tarjetacoche">
+                            <img src="imagenes/mazda rx8.jpg" alt="mazda-rx8">
+                            <h3>MAZDA RX8</h3>
+                            <p class="precio"><strong>10.000€</strong></p>
+                            <button class="btn masInfo">Más Información</button>
+                        </article>
+                    </div>
+                    <div class="caraTrasera">
+                        <ul>
+                            <li><strong>Motor: </strong>1.3 litros (1.308 cc) de dos rotores</li>
+                            <li><strong>Potencia: </strong>231 CV (170 kW) a un régimen de 8.200 rpm.</li>
+                            <li><strong>Aceleración (0-100 km/h): </strong> 6,4 segundos.</li>
+                            <li><strong>Velocidad Maxima</strong>235 km/h.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedorGira" modelo="bmw">
+                <div class="contenidoInterior">
+                    <div class="caraFrontal">
+                        <article class="tarjetacoche">
+                            <img src="imagenes/bmw e92.jpg" alt="bmw-e92">
+                            <h3>BMW E92</h3>
+                            <p class="precio"><strong>25.000€</strong></p>
+                            <button class="btn masInfo">Más Información</button>
+                        </article>
+                    </div>
+                    <div class="caraTrasera">
+                        <ul>
+                            <li><strong>Motor: </strong>V8 atmosférico a 90º (Código BMW S65).</li>
+                            <li><strong>Potencia: </strong>420 CV (309 kW) a 8.300 rpm.</li>
+                            <li><strong>Aceleración (0-100 km/h): </strong> 4,8 segundos (con caja manual) / 4,6 segundos (con caja DKG).</li>
+                            <li><strong>Velocidad Maxima</strong>250 km/h (limitada electrónicamente) o 280 km/h con el paquete M Driver’s Package.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedorGira" modelo="bmw">
+                <div class="contenidoInterior">
+                    <div class="caraFrontal">
+                        <article class="tarjetacoche">
+                            <img src="imagenes/bmw e30.webp" alt="bmw-e30">
+                            <h3>BMW E30</h3>
+                            <p class="precio"><strong>75.000€</strong></p>
+                            <button class="btn masInfo">Más Información</button>
+                        </article>
+                    </div>
+                    <div class="caraTrasera">
+                        <ul>
+                            <li><strong>Motor: </strong>4 Cilindrados 2.3 Litros</li>
+                            <li><strong>Potencia: </strong>Entre 195CV y 235CV  </li>
+                            <li><strong>Aceleración (0-100 km/h): </strong> 6,7 segundos.</li>
+                            <li><strong>Velocidad Maxima</strong>235 km/h</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedorGira" modelo="mazda">
+                <div class="contenidoInterior">
+                    <div class="caraFrontal">
+                        <article class="tarjetacoche">
+                            <img src="imagenes/mazda miata.png" alt="miata">
+                            <h3>MIATA</h3>
+                            <p class="precio"><strong>20.000€</strong></p>
+                            <button class="btn masInfo">Más Información</button>
+                        </article>
+                    </div>
+                    <div class="caraTrasera">
+                        <ul>
+                            <li><strong>Motor: </strong> 1.5 Skyactiv-G</li>
+                            <li><strong>Potencia: </strong>132CV  </li>
+                            <li><strong>Aceleración (0-100 km/h): </strong> 8,3 segundos</li>
+                            <li><strong>Velocidad Maxima</strong>204 km/h</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
         <h2 class="titulo">
             Contacta con nosotros:
@@ -151,13 +231,29 @@
     <footer id="SobreNosotros">
         <h2 class="titulo">Sobre Nosotros:</h2>
         <div class="sobreNosotros">
-            <p class="parafo">Pagina web hecha por Amine Bouayadi como una practica con (Html,Css,JavaScript). 
-                Soy un graduado de grado Superior de DAW, tengo experiencia trabajando en front end y back end y con base de datos.<br><br>
-                &nbsp;&nbsp;Para Contactar conmigo:<br><br>
-                &nbsp;&bull; Telefono:<a href="#612473471">612 47 34 71</a><br>
-                &nbsp;&bull; Gmail:<a href="#bouayadi49@gmail.com">Bouayadi49@gmail.com</a><br>
-                &nbsp;&bull; GitHUB:<a href="#Amine-GoW">Amine-GoW</a>
-            </p>
+            <img src="imagenes/black and white car.jpg" alt="Coche-negro-blanco">
+            <div class="texto">
+                <p class="parafo">
+                Fundado por Amine Bouayadi, AutoPremium une la precisión de la ingeniería de software con la potencia de los motores de alta gama. 
+                Aplicamos algoritmos de mercado para encontrar los mejores precios
+                en Europa y optimizar nuestro catálogo. Aquí, la tecnología y los caballos de potencia van de la mano.
+                </p>
+                <div class="contenedor-stats">
+                    <div class="stat-item">
+                        <span class="stat-numero">+150</span>
+                        <span class="stat-etiqueta">Puntos de Control</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-numero">100%</span>
+                        <span class="stat-etiqueta">Garantía</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-numero">24/7</span>
+                        <span class="stat-etiqueta">Soporte Exclusivo</span>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </footer>
         

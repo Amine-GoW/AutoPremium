@@ -67,3 +67,10 @@ function Buscar(){
             document.getElementById("sinResultados").style.display="none";
     });
 }
+const inicio=document.getElementById("inicio");
+inicio.addEventListener("click",function(){
+    tarjetasCoche.forEach(function(tarjeta){
+        document.getElementById("sinResultados").style.display="none";
+        tarjeta.style.display="block";
+    })
+});
