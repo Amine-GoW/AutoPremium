@@ -35,6 +35,9 @@ header{
     outline: none;
     font-size: 14px;
 }
+#buscar input::placeholder{
+    color: #d9cfcf;
+}
 #buscar input:focus{
     border-color: #00f0ff;
 }
@@ -289,6 +292,8 @@ header{
 @media (max-width: 768px) {
     /* 1. Achicamos las letras gigantes del Banner principal */
     .bienvenida {
+        display: flex;
+        justify-content: center;
         height: 60vh; /* Bajamos de 100vh a 60vh para que la caja sea más chata en móviles */
         min-height: 350px; /* Le ponemos un suelo mínimo para que los textos no se aplasten */
     }
@@ -333,15 +338,46 @@ header{
         padding: 10px;
     }
     /* 3. Liberamos el ancho fijo del Formulario y del Sobre Nosotros */
-    .contacto,
-    .contenedor,
-    .sobreNosotros {
-        width: 90% !important; /* Deja de medir 500px fijos y se adapta al ancho del móvil */
-        max-width: 100%;
+    .sobreNosotros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .sobreNosotros img{
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .sobreNosotros .stat-numero{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .contacto { 
+        width: 90% !important;
+        margin: 0 auto;
+        padding: auto;
     }
 
+    /* Hacemos que cada fila del formulario ponga la etiqueta arriba y el input abajo */
+    .contenedor form p, /* O la etiqueta estructural que uses por fila */
+    .contenedor label {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    /* Los campos de entrada se estiran al 100% del ancho disponible */
     .contenedor input, 
     .contenedor textarea {
-        width: 100%; /* Los inputs ocupan todo el ancho del bloque de formulario */
+        width: 100% !important;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 16px; /* Evita que el iPhone haga zoom automático al clicar */
     }
 }
