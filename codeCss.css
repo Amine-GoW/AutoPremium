@@ -308,19 +308,30 @@ header{
 
     /* 2. Hacemos el menú de navegación flexible */
     .menu {
-        position: static; /* En móviles es mejor que no tape la pantalla al hacer scroll */
+        position: relative; /* En móviles es mejor que no tape la pantalla al hacer scroll */
         padding: 15px;
         flex-direction: column; /* Apila el buscador arriba y los enlaces abajo */
         gap: 15px;
         padding: 15px;
     }
     .navegador {
-        gap: 10px;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        gap: 15px;
     }
     .lista {
         font-size: 16px; /* Letra un poco más pequeña para que no se desborde */
     }
-
+    #buscar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #buscar input{
+        width: 90%;
+        padding: 10px;
+    }
     /* 3. Liberamos el ancho fijo del Formulario y del Sobre Nosotros */
     .contacto,
     .contenedor,
